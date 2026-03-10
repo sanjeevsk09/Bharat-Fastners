@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Header } from './components/Header';
 import ProductCatalog from './components/ProductCatalog';
 import { HeroBanner } from './components/HeroBanner';
+import { AssortedPacks } from './components/AssortedPacks';
+import { ToolsSection } from './components/ToolsSection';
+import { ContactSection } from './components/ContactSection';
 import { Cart } from './components/Cart';
 import { Checkout } from './components/Checkout';
 import { OrderConfirmation } from './components/OrderConfirmation';
@@ -87,6 +90,9 @@ function App() {
       {/* Main content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <ProductCatalog onAddToCart={handleAddToCart} />
+        <AssortedPacks onAddToCart={handleAddToCart} />
+        <ToolsSection />
+        <ContactSection />
       </main>
 
       {/* Footer */}
@@ -112,9 +118,9 @@ function App() {
               <h4 className="text-sm font-semibold text-white mb-3">Quick Links</h4>
               <ul className="space-y-2 text-sm text-slate-500">
                 <li><a href="#catalog" className="hover:text-brand-400 transition-colors">All Products</a></li>
-                <li><a href="#" className="hover:text-brand-400 transition-colors">Assorted Packs</a></li>
-                <li><a href="#" className="hover:text-brand-400 transition-colors">Bulk Orders</a></li>
-                <li><a href="#" className="hover:text-brand-400 transition-colors">Shipping Policy</a></li>
+                <li><a href="#assorted-packs" className="hover:text-brand-400 transition-colors">Assorted Packs</a></li>
+                <li><a href="#tools" className="hover:text-brand-400 transition-colors">Tools</a></li>
+                <li><a href="#contact" className="hover:text-brand-400 transition-colors">Contact Us</a></li>
               </ul>
             </div>
 
