@@ -23,19 +23,19 @@ export type Product = {
 };
 
 const IMG = {
-  socket: "/images/socket-head.png",
-  button: "/images/socket-head.png",
-  csk: "/images/socket-head.png",
-  phillips: "/images/socket-head.png",
-  philcsk: "/images/socket-head.png",
-  cheese: "/images/socket-head.png",
-  grub: "/images/socket-head.png",
-  nut: "/images/socket-head.png",
-  nyloc: "/images/socket-head.png",
-  washer: "/images/socket-head.png",
-  spring: "/images/socket-head.png",
-  brass: "/images/socket-head.png",
-  spacer: "/images/socket-head.png",
+  socket: "/images/allen_socket_head.png",
+  button: "/images/allen_button_head.png",
+  csk: "/images/allen_countersunk.png",
+  phillips: "/images/phillips_pan_head.png",
+  philcsk: "/images/phillips_countersunk.png",
+  cheese: "/images/allen_socket_head.png",
+  grub: "/images/grub_screw.png",
+  nut: "/images/hex_nut.png",
+  nyloc: "/images/nyloc_nut.png",
+  washer: "/images/flat_washer.png",
+  spring: "/images/spring_washer.png",
+  brass: "/images/brass_insert.png",
+  spacer: "/images/nylon_spacer.png",
 };
 
 type PEntry = [string,number,number,number,string?,number?];
